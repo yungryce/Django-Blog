@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+{% block content%}
+<h1>We Don Make app!</h1>
+    <p>See what i made</p>
+    <!-- <a href="http://localhost:8000/">Home</a>
+    <a href="http://localhost:8000/about/">about</a> -->
+    <div class="arts">
+        {%for art in arts%}
+        <div class="art">
+            <h2><a href="#">{{art.title}}</a></h2>
+            <p>{{art.snip}}</p>
+            <p>{{art.date}}</p>
+        </div>
+
+        {%endfor%}
+    </div>
+{% endblock %}
